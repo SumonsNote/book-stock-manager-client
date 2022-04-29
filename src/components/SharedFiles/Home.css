@@ -1,0 +1,20 @@
+img {
+    width: 100%;
+    height: 100vh;
+}
+
+.customers-logo img {
+    width: 200px;
+    height:200px;
+    margin-right: 100px;
+    border: 1px solid;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.features {
+    border: 1px solid;
+    padding: 40px;
+    margin: 40px;
+}

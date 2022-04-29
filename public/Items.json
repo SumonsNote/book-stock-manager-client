@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Night Circus",
+        "img": "https://i.ibb.co/VvPcFfw/nights.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Alibaba",
+        "img": "https://i.ibb.co/k881B0F/alibaba.jpg"
+    },
+    {
+        "id": 3,
+        "name": "The 7 habits",
+        "img": "https://i.ibb.co/VxQwBXs/the-7-habits.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Leo Tolstoy",
+        "img": "https://i.ibb.co/p0YkYKn/leo.jpg"
+    },
+    {
+        "id": 5,
+        "name": "The Leader",
+        "img": "https://i.ibb.co/BK8Z8dn/leader.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Babylon",
+        "img": "https://i.ibb.co/Xyvxdhm/babylon.jpg"
+    }
+]
