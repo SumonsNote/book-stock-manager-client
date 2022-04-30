@@ -7,6 +7,7 @@ import Footer from './components/SharedFiles/Footer';
 import Inventory from './components/SharedFiles/Inventory';
 import Login from './components/SharedFiles/Login';
 import Register from './components/SharedFiles/Register';
+import RequiredAuth from './components/SharedFiles/RequiredAuth';
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
     <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/inventory' element={<Inventory></Inventory>}></Route>
+        <Route path='/inventory' element={
+          <RequiredAuth><Inventory></Inventory></RequiredAuth>
+        }></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
       </Routes>
