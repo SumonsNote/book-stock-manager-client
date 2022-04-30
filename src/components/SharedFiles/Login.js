@@ -3,6 +3,7 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../Firebase.init';
 import Loading from './Loading';
+import SocialLogin from './SocialLogin';
 
 const Login = () => {
     const navigate = useNavigate()
@@ -46,6 +47,7 @@ const Login = () => {
             <p>Didn't have an account?</p>
             <Link to='/register'><p>Create account</p></Link>
             </div>
+            <SocialLogin></SocialLogin>
         </form>
     );
 };
