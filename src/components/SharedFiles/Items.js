@@ -9,8 +9,10 @@ const Items = () => {
         .then(data => setItem(data))
     },[])
     return (
-        <div className='row container'>
-            <div className=' d-flex flex-wrap'>
+        <div className='container'>
+        <h2 className='py-5'>Books</h2>
+            <div className='row row-cols-3 py-5'>
+            
             {
                 item.map(item => <ItemDetail key={item.key} item={item}></ItemDetail>)
             }
