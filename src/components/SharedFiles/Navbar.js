@@ -19,11 +19,22 @@ const Navbar = () => {
     <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
       <div className='navbar-nav'>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      {
+        user &&<>
         <li class="nav-item">
-          <Link class="nav-link active" aria-current="page" to='/inventory'>Inventory</Link>
+          <Link class="nav-link active" aria-current="page" to='/manageInventory'>Manage Items</Link>
         </li>
+        <li class="nav-item">
+          <Link class="nav-link active" aria-current="page" to='/myItems'>My Items</Link>
+        </li>
+        <li class="nav-item">
+          <Link class="nav-link active" aria-current="page" to='/addNewItem'>Add Items</Link>
+        </li>
+        </>
+      }
         {
-          user ? <Link to='/login'><button className='btn btn-link' onClick={handleSignOut}>Logout</button></Link> :
+          user ?
+           <Link to='/login'><button className='btn btn-link' onClick={handleSignOut}>Logout</button></Link> :
           <button className='btn btn-link'><Link to='/login'>Login</Link></button>
         }
       </ul>

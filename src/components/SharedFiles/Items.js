@@ -12,7 +12,7 @@ const Items = () => {
             <div className='row row-cols-3 py-3'>
             
             {
-                slicedItem.map(item => <ItemDetail key={item.key} item={item}></ItemDetail>)
+                slicedItem.map(item => <ItemDetail key={item._id} item={item}></ItemDetail>)
             }
             
         </div>
