@@ -12,8 +12,15 @@ const Inventory = () => {
     },[])
     
     return (
-        <div>
+        <div className='container py-3'>
+            <img style={{width: '500px'}} src={books.img} alt=""/>
             <h2>Name:{books.name}</h2>
+            <p>Price: {books.price}</p>
+            <p>ID: {books._id}</p>
+            <p>Quantity: {books.quantity}</p>
+            <p>Supplier: {books.supplier}</p>
+            <p>Description: {books.des}</p>
+            <button className='btn btn-primary'>Delivered</button>
         </div>
     );
 };
