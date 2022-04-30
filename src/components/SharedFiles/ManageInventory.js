@@ -16,8 +16,9 @@ const ManageInventory = () => {
 
             <div className='row row-cols-3 py-3'>
             {
-                items.map(item => <ManageInventoryDetail key={item.key} item={item}></ManageInventoryDetail>)
+                items.map(item => <ManageInventoryDetail key={item.key} item={item} ></ManageInventoryDetail>)
             }
+            
             </div>
             <div className='py-5'>
                 <Link className='btn btn-primary' to='/addNewItem'>Add New Item</Link>

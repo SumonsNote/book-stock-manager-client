@@ -1,14 +1,9 @@
-import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ItemDetail from './ItemDetail';
+import useBooks from './UseBooks';
 
 const Items = () => {
-    const [item, setItem] = useState([])
-    useEffect(() => {
-        fetch('http://localhost:5000/books')
-        .then(res => res.json())
-        .then(data => setItem(data))
-    },[])
+    const [item, setItem] = useBooks([])
 
     const slicedItem = item.slice(0, 6)
     return (
