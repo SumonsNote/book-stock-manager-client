@@ -1,22 +1,37 @@
-import React, { useEffect, useState } from 'react';
 import ManageInventoryDetail from './ManageInventoryDetail';
 import { Link } from 'react-router-dom';
+import useBooks from './UseBooks';
 
 const ManageInventory = () => {
-    const [items, setItems] = useState([])
+    const [items, setItems] = useBooks([])
 
-    useEffect(() => {
-        fetch('http://localhost:5000/books')
+    const handleDelete = id => {
+        const url = `http://localhost:5000/books/${id}`
+        fetch(url, {
+            method: 'DELETE'
+        })
         .then(res => res.json())
-        .then(data => setItems(data))
-    },[])
+        .then(data => {
+            const remain = items.filter(item => item._id !== id);
+                setItems(remain);
+        })
+    }
+
+    
     return (
         <div className='container'>
             <h2>Manage Inventory</h2>
 
             <div className='row row-cols-3 py-3'>
             {
-                items.map(item => <ManageInventoryDetail key={item.key} item={item} ></ManageInventoryDetail>)
+                items.map(item => 
+                <div>
+                <ManageInventoryDetail key={item._id} item={item} ></ManageInventoryDetail>
+                <div className='ms-4 py-3'>
+                <button className='btn btn-danger' onClick={() => handleDelete(item._id)}>Delete</button>
+                </div>
+                </div>
+                )
             }
             
             </div>
