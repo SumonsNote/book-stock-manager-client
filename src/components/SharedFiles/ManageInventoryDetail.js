@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ManageInventoryDetail = ({item}) => {
     const {name, _id, price, quantity, supplier, img} = item;

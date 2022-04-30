@@ -21,7 +21,7 @@ const Items = () => {
             }
             
         </div>
-        <p className='text-center'><Link to='/manageInventory'>Manage Inventories</Link></p>]
+        <p className='text-center'><Link to='/manageInventory'>Manage Inventories</Link></p>
         </div>
     );
 };

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ManageInventoryDetail from './ManageInventoryDetail';
+import { Link } from 'react-router-dom';
 
 const ManageInventory = () => {
     const [items, setItems] = useState([])
@@ -17,6 +18,9 @@ const ManageInventory = () => {
             {
                 items.map(item => <ManageInventoryDetail key={item.key} item={item}></ManageInventoryDetail>)
             }
+            </div>
+            <div className='py-5'>
+                <Link className='btn btn-primary' to='/addNewItem'>Add New Item</Link>
             </div>
         </div>
     );
