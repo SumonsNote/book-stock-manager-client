@@ -11,11 +11,11 @@ import RequiredAuth from './components/SharedFiles/RequiredAuth';
 
 function App() {
   return (
-    <div>
+    <div className=''>
     <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/inventory' element={
+        <Route path='/inventory/:inventoryId' element={
           <RequiredAuth><Inventory></Inventory></RequiredAuth>
         }></Route>
         <Route path='/login' element={<Login></Login>}></Route>

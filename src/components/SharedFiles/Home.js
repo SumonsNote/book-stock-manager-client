@@ -17,7 +17,7 @@ const Home = () => {
             </div>
             <div className='container'>
             <div>
-                <h2 className='py-5 text-uppercase'>Customers</h2>
+                <h2 className='py-5 text-uppercase text-center'>Customers</h2>
                 <div className='customers-logo d-flex justify-content-center py-5'>
                     <img src={rokomari} alt=""/>
                     <img src={wafilife} alt=""/>
@@ -28,7 +28,7 @@ const Home = () => {
             </div>
             
             <div>
-                <h2 className='text-uppercase py-5'>Features</h2>
+                <h2 className='text-uppercase py-5 text-center'>Features</h2>
                     <div className='d-flex justify-content-center flex-wrap'>
                         <div className='features'>
                             <h2>Fastest Services</h2>
