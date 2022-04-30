@@ -20,15 +20,15 @@ const AddNewItem = () => {
         } )
     }
     return (
-        <div className='w-50 mx-auto'>
-            <h2>Please add a new item</h2>
+        <div className='w-50 mx-auto form-control my-5'>
+            <h2 className='text-center text-info'>Please add a new item</h2>
             <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
-                <input className='mb-2' placeholder='Book Name' {...register("name", { required: true})} />
-                <input className='mb-2' placeholder='Photo URL' type="text" {...register("img")} />
-                <input className='mb-2' placeholder='Price' type="number" {...register("price")} />
-                <input className='mb-2' placeholder='Quantity' type="number" {...register("quantity")} />
-                <input className='mb-2' placeholder='Supplier' {...register("supplier")} />
-                <input type="submit" value="Add New Item" />
+                <input className='mb-2 form-control' placeholder='Book Name' {...register("name", { required: true})} />
+                <input className='mb-2 form-control' placeholder='Photo URL' type="text" {...register("img")} />
+                <input className='mb-2 form-control' placeholder='Price' type="number" {...register("price")} />
+                <input className='mb-2 form-control' placeholder='Quantity' type="number" {...register("quantity")} />
+                <input className='mb-2 form-control' placeholder='Supplier' {...register("supplier")} />
+                <input className='btn btn-primary form-control' type="submit" value="Add New Item" />
             </form>
         </div>
     );
