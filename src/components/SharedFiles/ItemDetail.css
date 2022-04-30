@@ -1,4 +1,9 @@
 .books-details img{
-    width: 300px;
-    height: 300px;
+    width:200px;
+    height: 200px;
+}
+
+.books-details {
+    padding: 40px;
+    border: 1px solid;
 }

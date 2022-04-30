@@ -2,31 +2,55 @@
     {
         "id": 1,
         "name": "Night Circus",
-        "img": "https://i.ibb.co/VvPcFfw/nights.jpg"
+        "img": "https://i.ibb.co/VvPcFfw/nights.jpg",
+        "des": "Alibaba Group was established in 1999 by 18 people led by Jack Ma, a former English teacher from Hangzhou, China. From the outset, the company’s founders shared a belief that the Internet would level the playing field by enabling small enterprises to leverage innovation and technology to grow and compete more effectively in the domestic and global economies. Since launching its first website helping small and medium-sized enterprises in China to sell internationally, Alibaba Group has grown into a digital ecosystem with businesses comprising commerce, cloud computing, digital media and entertainment, and innovation initiatives.",
+        "price": 200,
+        "quantity": 20,
+        "supplier": "UK press"
     },
     {
         "id": 2,
         "name": "Alibaba",
-        "img": "https://i.ibb.co/k881B0F/alibaba.jpg"
+        "img": "https://i.ibb.co/k881B0F/alibaba.jpg",
+        "des": "Alibaba Group was established in 1999 by 18 people led by Jack Ma, a former English teacher from Hangzhou, China. From the outset, the company’s founders shared a belief that the Internet would level the playing field by enabling small enterprises to leverage innovation and technology to grow and compete more effectively in the domestic and global economies. Since launching its first website helping small and medium-sized enterprises in China to sell internationally, Alibaba Group has grown into a digital ecosystem with businesses comprising commerce, cloud computing, digital media and entertainment, and innovation initiatives.",
+        "price": 200,
+        "quantity": 20,
+        "supplier": "UK press"
     },
     {
         "id": 3,
         "name": "The 7 habits",
-        "img": "https://i.ibb.co/VxQwBXs/the-7-habits.jpg"
+        "img": "https://i.ibb.co/VxQwBXs/the-7-habits.jpg",
+        "des": "Alibaba Group was established in 1999 by 18 people led by Jack Ma, a former English teacher from Hangzhou, China. From the outset, the company’s founders shared a belief that the Internet would level the playing field by enabling small enterprises to leverage innovation and technology to grow and compete more effectively in the domestic and global economies. Since launching its first website helping small and medium-sized enterprises in China to sell internationally, Alibaba Group has grown into a digital ecosystem with businesses comprising commerce, cloud computing, digital media and entertainment, and innovation initiatives.",
+        "price": 200,
+        "quantity": 20,
+        "supplier": "UK press"
     },
     {
         "id": 4,
         "name": "Leo Tolstoy",
-        "img": "https://i.ibb.co/p0YkYKn/leo.jpg"
+        "img": "https://i.ibb.co/p0YkYKn/leo.jpg",
+        "des": "Alibaba Group was established in 1999 by 18 people led by Jack Ma, a former English teacher from Hangzhou, China. From the outset, the company’s founders shared a belief that the Internet would level the playing field by enabling small enterprises to leverage innovation and technology to grow and compete more effectively in the domestic and global economies. Since launching its first website helping small and medium-sized enterprises in China to sell internationally, Alibaba Group has grown into a digital ecosystem with businesses comprising commerce, cloud computing, digital media and entertainment, and innovation initiatives.",
+        "price": 200,
+        "quantity": 20,
+        "supplier": "UK press"
     },
     {
         "id": 5,
         "name": "The Leader",
-        "img": "https://i.ibb.co/BK8Z8dn/leader.jpg"
+        "img": "https://i.ibb.co/BK8Z8dn/leader.jpg",
+        "des": "Alibaba Group was established in 1999 by 18 people led by Jack Ma, a former English teacher from Hangzhou, China. From the outset, the company’s founders shared a belief that the Internet would level the playing field by enabling small enterprises to leverage innovation and technology to grow and compete more effectively in the domestic and global economies. Since launching its first website helping small and medium-sized enterprises in China to sell internationally, Alibaba Group has grown into a digital ecosystem with businesses comprising commerce, cloud computing, digital media and entertainment, and innovation initiatives.",
+        "price": 200,
+        "quantity": 20,
+        "supplier": "UK press"
     },
     {
         "id": 6,
         "name": "Babylon",
-        "img": "https://i.ibb.co/Xyvxdhm/babylon.jpg"
+        "img": "https://i.ibb.co/Xyvxdhm/babylon.jpg",
+        "des": "Alibaba Group was established in 1999 by 18 people led by Jack Ma, a former English teacher from Hangzhou, China. From the outset, the company’s founders shared a belief that the Internet would level the playing field by enabling small enterprises to leverage innovation and technology to grow and compete more effectively in the domestic and global economies. Since launching its first website helping small and medium-sized enterprises in China to sell internationally, Alibaba Group has grown into a digital ecosystem with businesses comprising commerce, cloud computing, digital media and entertainment, and innovation initiatives.",
+        "price": 200,
+        "quantity": 20,
+        "supplier": "UK press"
     }
 ]
