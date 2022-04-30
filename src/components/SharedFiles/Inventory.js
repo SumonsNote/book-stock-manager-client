@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const Inventory = () => {
     const {inventoryId} = useParams()
@@ -20,7 +20,14 @@ const Inventory = () => {
             <p>Quantity: {books.quantity}</p>
             <p>Supplier: {books.supplier}</p>
             <p>Description: {books.des}</p>
+            <div className='d-flex'>
+            <div className='pe-5'>
             <button className='btn btn-primary'>Delivered</button>
+            </div>
+            <input style={{width: '100px'}} type="number" name="" id=""/>
+            <button className='btn btn-primary'>Increase Quantity</button>
+            </div>
+            <p className='py-5'><Link to='/manageInventory'>Manage Inventories</Link></p>
         </div>
     );
 };
