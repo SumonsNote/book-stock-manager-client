@@ -12,6 +12,7 @@ import ManageInventory from './components/SharedFiles/ManageInventory';
 import AddNewItem from './components/SharedFiles/AddNewItem';
 import MyItems from './components/SharedFiles/MyItems';
 import Blog from './components/SharedFiles/Blog';
+import NotFound from './components/SharedFiles/NotFound';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/myItems' element={<RequiredAuth><MyItems></MyItems></RequiredAuth>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
