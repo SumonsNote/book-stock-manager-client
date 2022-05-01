@@ -1,8 +1,15 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from './../../Firebase.init';
+import axios from 'axios';
 
 const AddNewItem = () => {
     const { register, handleSubmit, reset } = useForm();
+    const [user] = useAuthState(auth);
+    if(user){
+        console.log(user);
+    }
 
     const onSubmit = data => {
         const url = `http://localhost:5000/books`;
@@ -19,6 +26,8 @@ const AddNewItem = () => {
             reset()
         } )
     }
+
+
     return (
         <div className='w-50 mx-auto form-control my-5'>
             <h2 className='text-center text-info'>Please add a new item</h2>

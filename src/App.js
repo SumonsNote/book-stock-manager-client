@@ -21,11 +21,11 @@ function App() {
         <Route path='/inventory/:inventoryId' element={
           <RequiredAuth><Inventory></Inventory></RequiredAuth>
         }></Route>
-        <Route path='/addNewItem' element={<AddNewItem></AddNewItem>}></Route>
-        <Route path='/manageInventory' element={<ManageInventory></ManageInventory>}></Route>
+        <Route path='/addNewItem' element={<RequiredAuth><AddNewItem></AddNewItem></RequiredAuth>}></Route>
+        <Route path='/manageInventory' element={<RequiredAuth><ManageInventory></ManageInventory></RequiredAuth>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
-        <Route path='/myItems' element={<MyItems></MyItems>}></Route>
+        <Route path='/myItems' element={<RequiredAuth><MyItems></MyItems></RequiredAuth>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
