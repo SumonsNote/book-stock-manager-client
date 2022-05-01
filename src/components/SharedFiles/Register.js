@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {} from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../Firebase.init';
@@ -8,6 +8,7 @@ import SocialLogin from './SocialLogin';
 const Register = () => {
     const navigate = useNavigate()
     const location = useLocation()
+
     const [
         createUserWithEmailAndPassword,
         user,
@@ -18,13 +19,13 @@ const Register = () => {
 
 
 
+
       const handleRegister = e => {
             e.preventDefault()
             const email = e.target.email.value;
             const password = e.target.password.value
-            const confirmPassword = e.target.confirmPassword.value
             console.log(email, password);
-            createUserWithEmailAndPassword(email, password, confirmPassword)
+            createUserWithEmailAndPassword(email, password)
       }
 
     if (user) {
@@ -46,14 +47,14 @@ const Register = () => {
                     <label for="exampleInputPassword1" className="form-label">Password</label>
                     <input type="password" name='password' className="form-control" id="exampleInputPassword1" />
                 </div>
-                <div className="mb-3">
-                    <label for="exampleInputPassword1" className="form-label">Confirm Password</label>
-                    <input type="password" name='confirmPassword' className="form-control" id="exampleInputPassword1" />
-                </div>
+
                 <button type="submit" className="btn btn-primary">Create Account</button>
                 <div className='d-flex justify-content-between py-5'>
+                
+                
                     <p>Already have an account?</p>
                     <Link to='/login'><p>Login</p></Link>
+                    
                 </div>
                 <SocialLogin></SocialLogin>
             </form>

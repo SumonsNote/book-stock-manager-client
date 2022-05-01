@@ -30,7 +30,7 @@ const Login = () => {
         return <Loading></Loading>
     }
     if (error) {
-        errorElement = <p className='text-danger'>Error: {error?.message}</p>
+        errorElement = <p className='text-danger'>Password did not match</p>
     }
 
     if (user) {
