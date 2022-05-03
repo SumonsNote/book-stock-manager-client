@@ -13,7 +13,7 @@ const Register = () => {
         user,
         loading,
         error,
-      ] = useCreateUserWithEmailAndPassword(auth);
+      ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
       let from = location.state?.from?.pathname || "/";
 
 
@@ -22,7 +22,6 @@ const Register = () => {
             e.preventDefault()
             const email = e.target.email.value;
             const password = e.target.password.value
-            console.log(email, password);
             createUserWithEmailAndPassword(email, password)
       }
 

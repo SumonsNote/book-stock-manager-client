@@ -8,7 +8,6 @@ const AddNewItem = () => {
     const { register, handleSubmit, reset } = useForm();
     const [user] = useAuthState(auth);
     if(user){
-        console.log(user);
     }
 
     const onSubmit = data => {
@@ -22,7 +21,6 @@ const AddNewItem = () => {
         })
         .then(res=> res.json())
         .then(result =>{
-            console.log(result);
             reset()
         } )
     }
