@@ -8,7 +8,7 @@ import SocialLogin from './SocialLogin';
 const Login = () => {
     const navigate = useNavigate()
     const location = useLocation()
-    let errorElement
+
     let from = location.state?.from?.pathname || "/";
     const [
         signInWithEmailAndPassword,
@@ -24,13 +24,8 @@ const Login = () => {
           signInWithEmailAndPassword(email, password)
       }
 
-      
-
       if (loading) {
         return <Loading></Loading>
-    }
-    if (error) {
-        errorElement = <p className='text-danger'>Password did not match</p>
     }
 
     if (user) {
@@ -49,7 +44,7 @@ const Login = () => {
             </div>
 
             <button type="submit" className="btn btn-primary">Login</button>
-            {errorElement}
+         
             <div className='d-flex justify-content-between py-5'>
             <p>Didn't have an account?</p>
             <Link to='/register'><p>Create account</p></Link>

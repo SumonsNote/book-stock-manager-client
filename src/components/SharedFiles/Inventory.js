@@ -24,10 +24,10 @@ const Inventory = () => {
             <div className='pe-5'>
             <button className='btn btn-primary'>Delivered</button>
             </div>
-            <input style={{width: '100px'}} type="number" name="" id=""/>
+            <input className='me-3' style={{width: '100px'}} type="number" name="" id=""/>
             <button className='btn btn-primary'>Increase Quantity</button>
             </div>
-            <p className='py-5'><Link to='/manageInventory'>Manage Inventories</Link></p>
+            <Link className='my-5 btn btn-warning text-decoration-none' to='/manageInventory'>Manage Inventories</Link>
         </div>
     );
 };
