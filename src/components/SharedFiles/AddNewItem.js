@@ -2,7 +2,6 @@ import React from 'react';
 import { useForm } from "react-hook-form";
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from './../../Firebase.init';
-import axios from 'axios';
 
 const AddNewItem = () => {
     const { register, handleSubmit, reset } = useForm();
@@ -11,17 +10,19 @@ const AddNewItem = () => {
     }
 
     const onSubmit = data => {
-        const url = `http://localhost:5000/books`;
+        const url = 'http://localhost:5000/books';
         fetch(url, {
             method: 'post',
             headers: {
+                'authorization':`${user.email} ${localStorage.getItem("accessToken")}`,
                 'content-type': 'application/json'
             },
             body: JSON.stringify(data)
         })
         .then(res=> res.json())
-        .then(result =>{
+        .then(data =>{
             reset()
+            console.log(data);
         } )
     }
 
