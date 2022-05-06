@@ -34,19 +34,19 @@ const Home = () => {
                             <h2>Fastest Services</h2>
                         </div>
                         <div className='features'>
-                            <h2>Cash On Delivery</h2>
+                            <h2>Authentic Products</h2>
                         </div>
                         <div className='features'>
-                            <h2>Cash On Delivery</h2>
+                            <h2>Cash on Delivery</h2>
                         </div>
                         <div className='features'>
-                            <h2>Cash On Delivery</h2>
+                            <h2>No Question Return policy</h2>
                         </div>
                         <div className='features'>
-                            <h2>Cash On Delivery</h2>
+                            <h2>Delivery worldwide</h2>
                         </div>
                         <div className='features'>
-                            <h2>Cash On Delivery</h2>
+                            <h2>100% customer satisfaction</h2>
                         </div>
                     </div>
             </div>

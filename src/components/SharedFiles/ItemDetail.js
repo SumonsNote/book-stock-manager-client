@@ -11,7 +11,7 @@ const ItemDetail = ({item}) => {
     const {_id, name, img, des, price, quantity, supplier} = item
     return (
         <div className='container'>
-            <div className='books-details m-1'>
+            <div className='books-details m-1 cols-12'>
             <h2>{name}</h2>
             <img src={img} alt=""/>
             <p>{des}</p>
