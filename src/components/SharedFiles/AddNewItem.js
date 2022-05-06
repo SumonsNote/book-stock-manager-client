@@ -14,7 +14,6 @@ const AddNewItem = () => {
         fetch(url, {
             method: 'post',
             headers: {
-                'authorization':`${user.email} ${localStorage.getItem("accessToken")}`,
                 'content-type': 'application/json'
             },
             body: JSON.stringify(data)
