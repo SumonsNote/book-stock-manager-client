@@ -22,7 +22,7 @@ const ManageInventory = () => {
         <div className='container'>
             <h2>Manage Inventory</h2>
 
-            <div className='row row-cols-3 py-3'>
+            <div className=' py-3'>
             {
                 items.map(item => 
                 <div>

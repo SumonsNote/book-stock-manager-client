@@ -46,11 +46,11 @@ const Login = () => {
         return <Loading></Loading>
     }
 
-    if (user || resetError) {
+    if (user) {
         navigate(from, { replace: true });
     }
 
-    if (error) {
+    if (error || resetError) {
         return (
           <div>
             <p>Error: {error.message}</p>
