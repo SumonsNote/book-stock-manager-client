@@ -16,7 +16,7 @@ import NotFound from './components/SharedFiles/NotFound';
 
 function App() {
   return (
-    <div className=''>
+    <div style={{marginBottom: "200px"}}>
     <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
