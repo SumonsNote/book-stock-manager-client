@@ -29,6 +29,7 @@ const Login = () => {
           const email = e.target.email.value;
           const password = e.target.password.value;
           signInWithEmailAndPassword(email, password)
+
       }
 
     const handleResetPassword = async() => {
@@ -45,9 +46,17 @@ const Login = () => {
         return <Loading></Loading>
     }
 
-    if (user) {
+    if (user || resetError) {
         navigate(from, { replace: true });
     }
+
+    if (error) {
+        return (
+          <div>
+            <p>Error: {error.message}</p>
+          </div>
+        );
+      }
     return (
         <form onSubmit={handleLogin} className='w-25 container py-5 mb-5'>
             <h2 className='text-center'>Login</h2>
@@ -66,6 +75,7 @@ const Login = () => {
                 <span>Forget password?</span>
                 <span onClick={handleResetPassword} className='btn btn-link'>Reset password</span>
             </div>
+
          
             <div className='d-flex justify-content-between py-5'>
             <p>Didn't have an account?</p>
