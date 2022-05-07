@@ -68,7 +68,7 @@ const Login = () => {
                 <label for="exampleInputPassword1" className="form-label">Password</label>
                 <input type="password" name='password' className="form-control" id="exampleInputPassword1" />
             </div>
-            <ToastContainer></ToastContainer>
+            
 
             <button type="submit" className="btn btn-primary">Login</button>
             <div className='d-flex justify-content-between align-items-center py-3'>
@@ -81,7 +81,7 @@ const Login = () => {
             <p>Didn't have an account?</p>
             <Link to='/register'><p>Create account</p></Link>
             </div>
-            <SocialLogin></SocialLogin>
+            <SocialLogin></SocialLogin><ToastContainer></ToastContainer>
         </form>
     );
 };

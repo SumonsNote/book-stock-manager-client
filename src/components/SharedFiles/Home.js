@@ -20,12 +20,12 @@ const Home = () => {
             </div>
             <div className='container'>
                 <div>
-                    <div className='bg bg-primary bg-gradient rounded-3 my-4 text-white w-25 mx-auto'>
+                    <div className='bg bg-light rounded-3 my-4 text-dark w-25 mx-auto'>
                     <h2 className='py-5 text-uppercase text-center'><FontAwesomeIcon style={{fontSize: "100px"}} icon={faIntercom}></FontAwesomeIcon><br/>Customers</h2>
                     </div>
 
 
-                    <div className='customers-logo d-flex justify-content-center py-5 bg-secondary bg-gradient text-white rounded-3'>
+                    <div className='customers-logo d-flex justify-content-center py-5 bg bg-light text-dark rounded-3'>
                         <img src={rokomari} alt="" />
                         <img src={wafilife} alt="" />
                         <img src={kalantar} alt="" />
@@ -35,10 +35,10 @@ const Home = () => {
                 </div>
 
                 <div className='py-3'>
-                <div className='bg bg-primary bg-gradient rounded-3 my-4 text-white w-25 mx-auto'>
+                <div className='bg bg-light bg-gradient rounded-3 my-4 text-dark w-25 mx-auto'>
                     <h2 className='py-5 text-uppercase text-center'><FontAwesomeIcon style={{fontSize: "100px"}} icon={faHandSparkles}></FontAwesomeIcon><br/>Features</h2>
                     </div>
-                    <div className='d-flex justify-content-center flex-wrap bg bg-secondary text-white rounded-3'>
+                    <div className='d-flex justify-content-center flex-wrap bg bg-light text-dark rounded-3'>
                         <div className='features rounded-3 text-center'>
                             <h5><FontAwesomeIcon className='fs-1 mb-2' icon={faTruckFast}></FontAwesomeIcon> <br/> Fastest Services</h5>
                         </div>

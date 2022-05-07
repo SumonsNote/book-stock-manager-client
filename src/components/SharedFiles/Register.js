@@ -27,19 +27,7 @@ const Register = () => {
             createUserWithEmailAndPassword(email, password, confirmPassword)
 
             if (password !== confirmPassword) {
-                toast.error('Password did not match')
-                return;
-            }
-            if (email === '' || email === undefined) {
-                toast.error('Please enter an Email!');
-                return;
-            }
-            if (password === '' || password === undefined) {
-                toast.error('Please enter your Password!');
-                return;
-            }
-            if (confirmPassword === '' || confirmPassword === undefined) {
-                toast.error('Please enter your Password!');
+                toast('Password did not match')
                 return;
             }
       }
