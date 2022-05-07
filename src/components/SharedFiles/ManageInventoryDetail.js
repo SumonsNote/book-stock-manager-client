@@ -18,7 +18,7 @@ const ManageInventoryDetail = ({ item }) => {
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img style={{width: '40px', height: '40px'}} src={img} alt=""/></td>
+                        <td><img style={{width: '100px', height: '150px'}} src={img} alt=""/></td>
                         <td>{_id}</td>
                         <td>{name}</td>
                         <td>{price}</td>

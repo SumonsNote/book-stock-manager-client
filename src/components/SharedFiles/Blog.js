@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div style={{marginBottom: "160px"}} className="accordion" id="accordionExample">
+        <div style={{marginBottom: "160px"}} className="accordion container" id="accordionExample">
         <h2 className='text-center py-5'>Questions and Answers</h2>
             <div className="accordion-item">
                 <h2 className="accordion-header" id="headingOne">

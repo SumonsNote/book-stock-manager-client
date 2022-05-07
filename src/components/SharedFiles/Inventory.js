@@ -12,8 +12,11 @@ const Inventory = () => {
     },[])
     
     return (
-        <div className='container py-3'>
-            <img style={{width: '500px'}} src={books.img} alt=""/>
+        <div className='container py-5 d-flex justify-content-center align-items-center'>
+            <div>
+            <img className='rounded-3' style={{width: '350px', height: '500px'}} src={books.img} alt=""/>
+            </div>
+            <div className='ms-4'>
             <h2>Name:{books.name}</h2>
             <p>Price: {books.price}</p>
             <p>ID: {books._id}</p>
@@ -28,6 +31,7 @@ const Inventory = () => {
             <button className='btn btn-primary'>Increase Quantity</button>
             </div>
             <Link className='my-5 btn btn-warning text-decoration-none' to='/manageInventory'>Manage Inventories</Link>
+            </div>
         </div>
     );
 };

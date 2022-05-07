@@ -1,6 +1,8 @@
 import ManageInventoryDetail from './ManageInventoryDetail';
 import { Link } from 'react-router-dom';
 import useBooks from './UseBooks';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 
 const ManageInventory = () => {
     const [items, setItems] = useBooks([])
@@ -32,7 +34,7 @@ const ManageInventory = () => {
                         <div>
                             <ManageInventoryDetail key={item._id} item={item} ></ManageInventoryDetail>
                             <div className='ms-4 py-3'>
-                                <button className='btn btn-danger' onClick={() => handleDelete(item._id)}>Delete</button>
+                                <button className='btn btn-danger px-3' onClick={() => handleDelete(item._id)}><FontAwesomeIcon className='me-2 fs-1 text-center p-1' icon={faTrashAlt} /></button>
                             </div>
                         </div>
                     )
