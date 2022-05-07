@@ -27,7 +27,8 @@ const AddNewItem = () => {
 
 
     return (
-        <div className='w-50 mx-auto form-control my-5'>
+        <div style={{marginBottom: "220px"}}>
+            <div className='w-50 mx-auto form-control my-5'>
             <h2 className='text-center text-info'>Please add a new item</h2>
             <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
                 <input className='mb-2 form-control' placeholder='Book Name' {...register("name", { required: true})} />
@@ -37,6 +38,7 @@ const AddNewItem = () => {
                 <input className='mb-2 form-control' placeholder='Supplier' {...register("supplier")} />
                 <input className='btn btn-primary form-control' type="submit" value="Add New Item" />
             </form>
+        </div>
         </div>
     );
 };

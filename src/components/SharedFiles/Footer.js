@@ -5,7 +5,7 @@ import { faFacebook, faGithub, faLinkedin, faTwitter } from '@fortawesome/free-b
 
 const Footer = () => {
     return (
-        <div className='bg-dark text-white py-3 fixed-bottom'>
+        <div className='bg-dark text-white py-2'>
             <div className='container py-3 d-flex justify-content-between align-items-center'>
                 <h2 className='footer-font'>Stay Connected with us</h2>
                 <div>
