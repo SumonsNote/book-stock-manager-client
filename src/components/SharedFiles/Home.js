@@ -20,7 +20,7 @@ const Home = () => {
             </div>
             <div className='container'>
                 <div>
-                    <div className='bg bg-light rounded-3 my-4 text-dark w-25 mx-auto'>
+                    <div className='bg rounded-3 my-4 text-dark w-25 mx-auto'>
                     <h2 className='py-5 text-uppercase text-center'><FontAwesomeIcon style={{fontSize: "100px"}} icon={faIntercom}></FontAwesomeIcon><br/>Customers</h2>
                     </div>
 
@@ -35,7 +35,7 @@ const Home = () => {
                 </div>
 
                 <div className='py-3'>
-                <div className='bg bg-light bg-gradient rounded-3 my-4 text-dark w-25 mx-auto'>
+                <div className='bg bg-gradient rounded-3 my-4 text-dark w-25 mx-auto'>
                     <h2 className='py-5 text-uppercase text-center'><FontAwesomeIcon style={{fontSize: "100px"}} icon={faHandSparkles}></FontAwesomeIcon><br/>Features</h2>
                     </div>
                     <div className='d-flex justify-content-center flex-wrap bg bg-light text-dark rounded-3'>
