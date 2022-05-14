@@ -10,7 +10,7 @@ const AddNewItem = () => {
     }
 
     const onSubmit = data => {
-        const url = 'http://localhost:5000/books';
+        const url = 'https://dry-beyond-11415.herokuapp.com/books';
         fetch(url, {
             method: 'post',
             headers: {

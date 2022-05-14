@@ -8,7 +8,7 @@ const ManageInventory = () => {
     const [items, setItems] = useBooks([])
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/books/${id}`
+        const url = `https://dry-beyond-11415.herokuapp.com/books/${id}`
         fetch(url, {
             method: 'DELETE'
         })
